@@ -6,8 +6,8 @@
   "eqeqeq": true,
   "esnext": true,
   "immed": true,
-  "indent": 2,
-  "latedef": "nofunc",
+  "jasmine": true,
+  "latedef": true,
   "newcap": true,
   "noarg": true,
   "node": true,
@@ -17,6 +17,6 @@
   "unused": true,
   "globals": {
     "angular": false,
-    "firebase": false
+    "inject": false
   }
 }

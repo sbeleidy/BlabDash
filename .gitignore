@@ -1,7 +1,6 @@
-logs/*
-!.gitkeep
-node_modules/
-bower_components/
-tmp
-.DS_Store
-.idea
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+app/scripts/angularfire/config.js

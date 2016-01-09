@@ -1,0 +1,102 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+body {
+  font-family: BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
+  margin: 50 auto;
+  background: #fffffc;
+  background-image: url(https://s3.amazonaws.com/f.cl.ly/items/2C31353z1U1b290S1M1h/pink.png?v=ba276333);
+  text-shadow: 1px 1px white;
+  text-align: center;
+  background-attachment: fixed;
+  /*
+  background: -moz-linear-gradient(top, rgba(255,216,216,1) 0%, rgba(255,255,252,0.87) 13%, rgba(255,255,252,0) 100%);
+background: -webkit-linear-gradient(top, rgba(255,216,216,1) 0%,rgba(255,255,252,0.87) 13%,rgba(255,255,252,0) 100%);
+background: linear-gradient(to bottom, rgba(255,216,216,1) 0%,rgba(255,255,252,0.87) 13%,rgba(255,255,252,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd8d8', endColorstr='#00fffffc',GradientType=0 );
+*/
+}
+
+a {
+  color: purple;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed #d4d4d4;
+}
+
+a:hover {
+  color: black;
+}
+
+table {
+  border-collapse: collapse;
+  width: 500px;
+  background: white;
+  margin: 0 auto;
+}
+
+ td {
+  border: 1px dashed #d4d4d4;
+  padding: 25px;
+  text-align: center;
+}
+
+table b {
+  font-size: 2em;
+}
+
+td:hover {
+  background: #fefefe;
+  text-shadow: 1px 1px white;
+}
+
+h1 {
+  width: 800px;
+  margin: 50px auto;
+  font-size: 40px;
+  color: lightcoral;
+  font-weight: 200;
+}
+
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  line-height: 40px;
+  background: white;    
+  font-size: 14px;
+  color: gray;
+  border-top: 1px dashed #d4d4d4;
+}
+    
