@@ -41,3 +41,26 @@ angular.module('testFireApp')
 
 
   });
+
+
+
+//var epoch = require('epoch.js');
+//
+/////----------------------- GET DAY --------------------------------------
+//
+//var unix_time = function () {
+//    var e = epoch();
+//    var unix = e.time();
+//
+////-- GET MIN    
+//    var min_block = unix / 60000;
+//    var min_clean = parseInt(min_block);
+//    var min = min_clean * 60000;
+////-- GET DAY
+//    var day_block = min / 86400000;        
+//    var day_clean = parseInt(day_block);
+//    var day = day_clean * 86400000;
+//    
+//    return day;
+//}
+
