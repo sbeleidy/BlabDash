@@ -4,24 +4,20 @@
         <td colspan="2"><b>Today's statistics</b></td>
     </tr>
     <tr>
-        <td>Total hours spent on Blab</td>
-        <td>{{hours}}</td>
-    </tr>
-    <tr>
         <td>New user registrations</td>
-        <td>{{newUsers}}</td>
+        <td>{{today[0].total_new_users}}</td>
     </tr>
     <tr>
-        <td>Average time spent per user</td>
-        <td>{{averageMins}} min</td>
+        <td>Logged-in users</td>
+        <td>{{today[0].total_unique}}</td>
     </tr>
     <tr>
         <td>Users that went live on cam</td>
-        <td>{{onCamUsers}}</td>
+        <td>{{today[0].total_on_cam}}</td>
     </tr>
     <tr>
         <td>Total hosted Blabs</td>
-        <td>{{blabs}}</td>
+        <td>{{today[0].total_blabs}}</td>
     </tr>
 </table>
 
