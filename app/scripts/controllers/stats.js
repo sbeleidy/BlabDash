@@ -9,24 +9,24 @@
 angular.module('testFireApp')
   .controller('StatsCtrl', function ($scope, Ref, $firebaseArray) {
     // synchronize a read-only, synchronized array of messages, limit to most recent 10
-    $scope.stats = $firebaseArray(Ref.child('stats').limitToLast(3));
+    $scope.summary = $firebaseArray(Ref.child('summary').limitToLast(3));
 
     // There should be a way to simply access each objects keys through firebase
     // Current way is inefficient - needs updating
-    $scope.stats.$loaded().then(function(){
-      $scope.blabs = $scope.stats.map(function(obj){
-        return Object.keys(obj.blabs).length;
+    $scope.summary.$loaded().then(function(){
+      $scope.blabs = $scope.summary.map(function(obj){
+        return obj.total_blabs;
       });
-      $scope.newUsers = $scope.stats.map(function(obj){
-        return Object.keys(obj.new_users).length;
+      $scope.newUsers = $scope.summary.map(function(obj){
+        return obj.total_new_users;
       });
-      $scope.onCam = $scope.stats.map(function(obj){
-        return Object.keys(obj.on_cam).length;
+      $scope.onCam = $scope.summary.map(function(obj){
+        return obj.total_on_cam;
       });
-      $scope.uniques = $scope.stats.map(function(obj){
-        return Object.keys(obj.unique).length;
+      $scope.uniques = $scope.summary.map(function(obj){
+        return obj.total_unique;
       });
-      $scope.labels = $scope.stats.map(function(obj){
+      $scope.labels = $scope.summary.map(function(obj){
         return new Date(parseInt(obj.$id));
       });
       $scope.data = [
