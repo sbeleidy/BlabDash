@@ -58,14 +58,17 @@ a:hover {
 table {
   border-collapse: collapse;
   width: 500px;
-  background: white;
+  background: #f4f4f4;
   margin: 0 auto;
+  text-shadow: 1px 1px white;
   
 
 		        animation: fadein 1s;
 		        animation-delay: 0.8s;
 		        animation-fill-mode: both;
 }
+
+
 
  td {
   border: 1px dashed #d4d4d4;
@@ -78,7 +81,7 @@ table b {
 }
 
 td:hover {
-  background: #fefefe;
+	color: gray;
   text-shadow: 1px 1px white;
 }
 
