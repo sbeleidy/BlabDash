@@ -5,6 +5,7 @@
     <title>Blab Dash</title>
     <meta name="description" content="Statistics on Blab.im, showcasing daily usage metrics, and long term growth.">
     <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <link rel="stylesheet" href="bower_components/angular-chart.js/dist/angular-chart.css">
@@ -21,35 +22,16 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div class="header" ng-cloak="">
-      <div class="navbar navbar-default" role="navigation">
-        <div class="container">
-          <div class="navbar-header">
-
-            <a class="navbar-brand" href="#/">Blab Dash</a>
-          </div>
-
-          <div class="collapse">
-
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#/">Home</a></li>
-              <!-- //angularfire -->
-              <li><a ng-href="#/stats">Stats</a></li>
-
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="container">
     <div ng-view=""></div>
     </div>
 
+<!-- TEMPORARILY COMMENTED OUT FOR EXTRA MINIMALISM 
     <footer>
-      Created on a Thursday by <a href="http://twitter.com/bkawk" target="_blank">@bkawk</a>, <a href="http://twitter.com/aminozuur" target="_blank">@aminozuur</a> and <a href="http://twitter.com/sbeleidy" target="_blank">@sbeleidy</a>.
+      Created by <a href="http://twitter.com/bkawk" target="_blank">@bkawk</a>, <a href="http://twitter.com/sbeleidy" target="_blank">@sbeleidy</a> and <a href="http://twitter.com/aminozuur" target="_blank">@aminozuur</a>.
     </footer>
-
+-->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>

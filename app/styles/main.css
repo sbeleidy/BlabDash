@@ -32,10 +32,9 @@
 body {
   font-family: BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
   margin: 50 auto;
-  background: #fffffc;
-  background-image: url(https://s3.amazonaws.com/f.cl.ly/items/2C31353z1U1b290S1M1h/pink.png?v=ba276333);
-  text-shadow: 1px 1px white;
+  background: #220344;
   text-align: center;
+  background: url(/images/bg.png);
   background-attachment: fixed;
   /*
   background: -moz-linear-gradient(top, rgba(255,216,216,1) 0%, rgba(255,255,252,0.87) 13%, rgba(255,255,252,0) 100%);
@@ -81,8 +80,8 @@ td:hover {
 h1 {
   width: 800px;
   margin: 50px auto;
-  font-size: 40px;
-  color: lightcoral;
+  font-size: 50px;
+  color: #7F559C;
   font-weight: 200;
 }
 
@@ -100,3 +99,41 @@ footer {
   border-top: 1px dashed #d4d4d4;
 }
     
+
+.footnote {
+	width: 500px;
+    margin: 0 auto;
+    color: #5A4C82;
+    font-size: 12px;
+    text-shadow: 1px 1px #19073C;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-shadow: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
