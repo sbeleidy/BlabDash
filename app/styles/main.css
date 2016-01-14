@@ -60,6 +60,11 @@ table {
   width: 500px;
   background: white;
   margin: 0 auto;
+  
+
+		        animation: fadein 1s;
+		        animation-delay: 0.8s;
+		        animation-fill-mode: both;
 }
 
  td {
@@ -83,7 +88,19 @@ h1 {
   font-size: 50px;
   color: #7F559C;
   font-weight: 200;
+  
+		        animation: fadein 1s;
+		        animation-duration: 1s;
+		        animation-delay: 0.2s;
+		        animation-fill-mode: both;
 }
+
+			@keyframes fadein {
+    from { top:0px; opacity: 0; transform: scale(0.6);}
+    to   { top:0px; opacity: 1; transform: scale(1);}
+    
+}
+
 
 footer {
   text-align: center;
