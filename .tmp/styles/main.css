@@ -56,11 +56,14 @@ a:hover {
 }
 
 table {
-  border-collapse: collapse;
-  width: 500px;
-  background: #f4f4f4;
-  margin: 0 auto;
-  text-shadow: 1px 1px white;
+border-collapse: collapse;
+    width: 500px;
+    background: #232323;
+    margin: 0 auto;
+    text-shadow: 1px 1px black;
+    height: 500px;
+    font-size: 1.2em;
+    color: white;
   
 
 		        animation: fadein 1s;
@@ -71,7 +74,6 @@ table {
 
 
  td {
-  border: 1px dashed #d4d4d4;
   padding: 25px;
   text-align: center;
 }
@@ -80,9 +82,8 @@ table b {
   font-size: 2em;
 }
 
-td:hover {
-	color: gray;
-  text-shadow: 1px 1px white;
+tr:hover {
+  text-shadow: 1px 1px #a857e1;
 }
 
 h1 {
