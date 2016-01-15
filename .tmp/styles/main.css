@@ -32,10 +32,9 @@
 body {
   font-family: BlinkMacSystemFont, Helvetica Neue, Helvetica, sans-serif;
   margin: 50 auto;
-  background: #fffffc;
-  background-image: url(https://s3.amazonaws.com/f.cl.ly/items/2C31353z1U1b290S1M1h/pink.png?v=ba276333);
-  text-shadow: 1px 1px white;
+  background: #220344;
   text-align: center;
+  background: url(/images/bg.png);
   background-attachment: fixed;
   /*
   background: -moz-linear-gradient(top, rgba(255,216,216,1) 0%, rgba(255,255,252,0.87) 13%, rgba(255,255,252,0) 100%);
@@ -57,14 +56,24 @@ a:hover {
 }
 
 table {
-  border-collapse: collapse;
-  width: 500px;
-  background: white;
-  margin: 0 auto;
+border-collapse: collapse;
+    width: 500px;
+    background: #232323;
+    margin: 0 auto;
+    text-shadow: 1px 1px black;
+    height: 500px;
+    font-size: 1.2em;
+    color: white;
+  
+
+		        animation: fadein 1s;
+		        animation-delay: 0.8s;
+		        animation-fill-mode: both;
 }
 
+
+
  td {
-  border: 1px dashed #d4d4d4;
   padding: 25px;
   text-align: center;
 }
@@ -73,18 +82,29 @@ table b {
   font-size: 2em;
 }
 
-td:hover {
-  background: #fefefe;
-  text-shadow: 1px 1px white;
+tr:hover {
+  text-shadow: 1px 1px #a857e1;
 }
 
 h1 {
   width: 800px;
   margin: 50px auto;
-  font-size: 40px;
-  color: lightcoral;
+  font-size: 50px;
+  color: #7F559C;
   font-weight: 200;
+  
+		        animation: fadein 1s;
+		        animation-duration: 1s;
+		        animation-delay: 0.2s;
+		        animation-fill-mode: both;
 }
+
+			@keyframes fadein {
+    from { top:0px; opacity: 0; transform: scale(0.6);}
+    to   { top:0px; opacity: 1; transform: scale(1);}
+    
+}
+
 
 footer {
   text-align: center;
@@ -101,4 +121,40 @@ footer {
 }
     
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm1haW4uY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLHdCQUF3Qjs7QUFFeEI7RUFDRSxpQkFBaUI7RUFDakIsaUNBQWlDO0VBQ2pDLG1CQUFtQjtFQUNuQixtQkFBbUI7Q0FDcEI7O0FBRUQ7RUFDRSxhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxhQUFhO0NBQ2Q7O0FBRUQ7RUFDRSxnQkFBZ0I7Q0FDakI7O0FBRUQ7RUFDRSxhQUFhO0VBQ2IscUJBQXFCO0NBQ3RCOztBQUVEO0VBQ0UsWUFBWTtFQUNaLFdBQVc7Q0FDWjs7QUFFRDtFQUNFLHVFQUF1RTtFQUN2RSxnQkFBZ0I7RUFDaEIsb0JBQW9CO0VBQ3BCLHVHQUF1RztFQUN2RywyQkFBMkI7RUFDM0IsbUJBQW1CO0VBQ25CLDZCQUE2QjtFQUM3Qjs7Ozs7RUFLQTtDQUNEOztBQUVEO0VBQ0UsY0FBYztFQUNkLGlCQUFpQjtFQUNqQixzQkFBc0I7RUFDdEIsa0NBQWtDO0NBQ25DOztBQUVEO0VBQ0UsYUFBYTtDQUNkOztBQUVEO0VBQ0UsMEJBQTBCO0VBQzFCLGFBQWE7RUFDYixrQkFBa0I7RUFDbEIsZUFBZTtDQUNoQjs7Q0FFQTtFQUNDLDJCQUEyQjtFQUMzQixjQUFjO0VBQ2QsbUJBQW1CO0NBQ3BCOztBQUVEO0VBQ0UsZUFBZTtDQUNoQjs7QUFFRDtFQUNFLG9CQUFvQjtFQUNwQiwyQkFBMkI7Q0FDNUI7O0FBRUQ7RUFDRSxhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsaUJBQWlCO0NBQ2xCOztBQUVEO0VBQ0UsbUJBQW1CO0VBQ25CLGdCQUFnQjtFQUNoQixVQUFVO0VBQ1YsUUFBUTtFQUNSLFNBQVM7RUFDVCxhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixnQkFBZ0I7RUFDaEIsWUFBWTtFQUNaLCtCQUErQjtDQUNoQyIsImZpbGUiOiJtYWluLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qIGFwcCBjc3Mgc3R5bGVzaGVldCAqL1xuXG4ubWVudSB7XG4gIGxpc3Qtc3R5bGU6IG5vbmU7XG4gIGJvcmRlci1ib3R0b206IDAuMWVtIHNvbGlkIGJsYWNrO1xuICBtYXJnaW4tYm90dG9tOiAyZW07XG4gIHBhZGRpbmc6IDAgMCAwLjVlbTtcbn1cblxuLm1lbnU6YmVmb3JlIHtcbiAgY29udGVudDogXCJbXCI7XG59XG5cbi5tZW51OmFmdGVyIHtcbiAgY29udGVudDogXCJdXCI7XG59XG5cbi5tZW51ID4gbGkge1xuICBkaXNwbGF5OiBpbmxpbmU7XG59XG5cbi5tZW51ID4gbGk6YmVmb3JlIHtcbiAgY29udGVudDogXCJ8XCI7XG4gIHBhZGRpbmctcmlnaHQ6IDAuM2VtO1xufVxuXG4ubWVudSA+IGxpOm50aC1jaGlsZCgxKTpiZWZvcmUge1xuICBjb250ZW50OiBcIlwiO1xuICBwYWRkaW5nOiAwO1xufVxuXG5ib2R5IHtcbiAgZm9udC1mYW1pbHk6IEJsaW5rTWFjU3lzdGVtRm9udCwgSGVsdmV0aWNhIE5ldWUsIEhlbHZldGljYSwgc2Fucy1zZXJpZjtcbiAgbWFyZ2luOiA1MCBhdXRvO1xuICBiYWNrZ3JvdW5kOiAjZmZmZmZjO1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoaHR0cHM6Ly9zMy5hbWF6b25hd3MuY29tL2YuY2wubHkvaXRlbXMvMkMzMTM1M3oxVTFiMjkwUzFNMWgvcGluay5wbmc/dj1iYTI3NjMzMyk7XG4gIHRleHQtc2hhZG93OiAxcHggMXB4IHdoaXRlO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtYXR0YWNobWVudDogZml4ZWQ7XG4gIC8qXG4gIGJhY2tncm91bmQ6IC1tb3otbGluZWFyLWdyYWRpZW50KHRvcCwgcmdiYSgyNTUsMjE2LDIxNiwxKSAwJSwgcmdiYSgyNTUsMjU1LDI1MiwwLjg3KSAxMyUsIHJnYmEoMjU1LDI1NSwyNTIsMCkgMTAwJSk7XG5iYWNrZ3JvdW5kOiAtd2Via2l0LWxpbmVhci1ncmFkaWVudCh0b3AsIHJnYmEoMjU1LDIxNiwyMTYsMSkgMCUscmdiYSgyNTUsMjU1LDI1MiwwLjg3KSAxMyUscmdiYSgyNTUsMjU1LDI1MiwwKSAxMDAlKTtcbmJhY2tncm91bmQ6IGxpbmVhci1ncmFkaWVudCh0byBib3R0b20sIHJnYmEoMjU1LDIxNiwyMTYsMSkgMCUscmdiYSgyNTUsMjU1LDI1MiwwLjg3KSAxMyUscmdiYSgyNTUsMjU1LDI1MiwwKSAxMDAlKTtcbmZpbHRlcjogcHJvZ2lkOkRYSW1hZ2VUcmFuc2Zvcm0uTWljcm9zb2Z0LmdyYWRpZW50KCBzdGFydENvbG9yc3RyPScjZmZkOGQ4JywgZW5kQ29sb3JzdHI9JyMwMGZmZmZmYycsR3JhZGllbnRUeXBlPTAgKTtcbiovXG59XG5cbmEge1xuICBjb2xvcjogcHVycGxlO1xuICBmb250LXdlaWdodDogNjAwO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG4gIGJvcmRlci1ib3R0b206IDFweCBkYXNoZWQgI2Q0ZDRkNDtcbn1cblxuYTpob3ZlciB7XG4gIGNvbG9yOiBibGFjaztcbn1cblxudGFibGUge1xuICBib3JkZXItY29sbGFwc2U6IGNvbGxhcHNlO1xuICB3aWR0aDogNTAwcHg7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBtYXJnaW46IDAgYXV0bztcbn1cblxuIHRkIHtcbiAgYm9yZGVyOiAxcHggZGFzaGVkICNkNGQ0ZDQ7XG4gIHBhZGRpbmc6IDI1cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxudGFibGUgYiB7XG4gIGZvbnQtc2l6ZTogMmVtO1xufVxuXG50ZDpob3ZlciB7XG4gIGJhY2tncm91bmQ6ICNmZWZlZmU7XG4gIHRleHQtc2hhZG93OiAxcHggMXB4IHdoaXRlO1xufVxuXG5oMSB7XG4gIHdpZHRoOiA4MDBweDtcbiAgbWFyZ2luOiA1MHB4IGF1dG87XG4gIGZvbnQtc2l6ZTogNDBweDtcbiAgY29sb3I6IGxpZ2h0Y29yYWw7XG4gIGZvbnQtd2VpZ2h0OiAyMDA7XG59XG5cbmZvb3RlciB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBib3R0b206IDA7XG4gIGxlZnQ6IDA7XG4gIHJpZ2h0OiAwO1xuICBoZWlnaHQ6IDQwcHg7XG4gIGxpbmUtaGVpZ2h0OiA0MHB4O1xuICBiYWNrZ3JvdW5kOiB3aGl0ZTsgICAgXG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgY29sb3I6IGdyYXk7XG4gIGJvcmRlci10b3A6IDFweCBkYXNoZWQgI2Q0ZDRkNDtcbn1cbiAgICBcbiJdfQ== */
+.footnote {
+	width: 500px;
+    margin: 0 auto;
+    color: #5A4C82;
+    font-size: 12px;
+    text-shadow: 1px 1px #19073C;
+}
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-shadow: none;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: red;
+}
