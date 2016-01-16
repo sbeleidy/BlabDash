@@ -21,6 +21,8 @@ module.exports = function (grunt) {
     dist: 'dist'
   };
 
+  var env = grunt.file.readJSON('env.json');
+
   // Define the configuration for all the tasks
   grunt.initConfig({
 
@@ -386,26 +388,7 @@ module.exports = function (grunt) {
       }
     },
 
-    buildcontrol: {
-      options: {
-        dir: 'dist',
-        commit: true,
-        push: true,
-        message: 'Built %sourceName% from commit %sourceCommit% on branch %sourceBranch%'
-      },
-      pages: {
-        options: {
-          remote: 'https://github.com:sbeleidy/BlabDash.git',
-          branch: 'test'
-        }
-      },
-      local: {
-        options: {
-          remote: '../',
-          branch: 'build'
-        }
-      }
-    }
+    buildcontrol: env.buildControl
 
   });
 
