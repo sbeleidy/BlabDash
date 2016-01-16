@@ -395,7 +395,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:sbeleidy/BlabDash.git',
+          remote: 'https://github.com:sbeleidy/BlabDash.git',
           branch: 'test'
         }
       },
