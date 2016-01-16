@@ -34,7 +34,7 @@ body {
   margin: 50 auto;
   background: #220344;
   text-align: center;
-  background: url(/images/bg.png);
+  background: url(https://raw.githubusercontent.com/sbeleidy/BlabDash/master/app/images/bg.png);
   background-attachment: fixed;
   /*
   background: -moz-linear-gradient(top, rgba(255,216,216,1) 0%, rgba(255,255,252,0.87) 13%, rgba(255,255,252,0) 100%);
